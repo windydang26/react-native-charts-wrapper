@@ -22,7 +22,7 @@ class PieDataExtract : DataExtract {
         pieDataSet.valueLineWidth = CGFloat(0.5);
         pieDataSet.valueLinePart1Length = CGFloat(1);
         pieDataSet.valueLinePart2Length = CGFloat(1);
-        pieDataSet.xValuePosition = .outsideSlice;
+        pieDataSet.yValuePosition = .outsideSlice;
         
         ChartDataSetConfigUtils.commonConfig(pieDataSet, config: config);
         
