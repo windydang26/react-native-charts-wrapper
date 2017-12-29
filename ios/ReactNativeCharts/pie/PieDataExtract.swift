@@ -19,6 +19,11 @@ class PieDataExtract : DataExtract {
     override func dataSetConfig(_ dataSet: IChartDataSet, config: JSON) {
         let pieDataSet = dataSet as! PieChartDataSet;
         
+        pieDataSet.valueLineWidth = CGFloat(0.5);
+        pieDataSet.valueLinePart1Length = CGFloat(1);
+        pieDataSet.valueLinePart2Length = CGFloat(1);
+        pieDataSet.xValuePosition = .outsideSlice;
+        
         ChartDataSetConfigUtils.commonConfig(pieDataSet, config: config);
         
         // PieDataSet only config
