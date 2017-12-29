@@ -32,7 +32,7 @@ public class PieDataExtract extends DataExtract<PieData, PieEntry> {
     void dataSetConfig(IDataSet<PieEntry> dataSet, ReadableMap config) {
         PieDataSet pieDataSet = (PieDataSet) dataSet;
         
-        pieDataSet.setYValuePosition(PieDataSet.ValuePosition.OUTSIDE_SLICE);
+        pieDataSet.setXValuePosition(PieDataSet.ValuePosition.OUTSIDE_SLICE);
         pieDataSet.setValueLinePart1Length(1f);
         pieDataSet.setValueLinePart2Length(1f);
 
